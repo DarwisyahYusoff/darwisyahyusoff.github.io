@@ -1,0 +1,60 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: lightgray;
+  padding: 20px;
+  width: 45%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+}
+
+/* Tablet (landskap & potret) */
+@media (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Telefon besar (seperti iPhone 14 Pro Max) */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* Telefon kecil (320px - 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
